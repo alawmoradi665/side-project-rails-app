@@ -1,3 +1,31 @@
-<h1>Uthuru</h1>
+<div class="jumbotron">
+  <div class= "row">
+   <div class= "col-md-6">
 
-<p>What land are you on?</p>
+      <h1 class="display-4">Uthuru</h1>
+      <p class="lead">What land are you on?</p>
+      <hr class="my-4">
+      <p></p>
+
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Choose location
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <%# <a class="dropdown-item" href="#">Another action</a> %>
+    <%# <%=link_to "Show me all current locations", blog_page_path, class:"dropdown-item"%> %>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+</div>
+      <br><br>
+      <p class="lead"><%= link_to "Show all", blog_page_path, class:"btn btn-primary btn-lg"%></p>
+      <p class="lead"><%= link_to "Add location", new_location_path, class:"btn btn-primary btn-lg"%></p>
+      
+
+    </div>
+
+<%# lägg till något på sidan av home page %>
+        <%# <div class= "col-md-6">
+        </div> %>
+  </div>
+</div>
