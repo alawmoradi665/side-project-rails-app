@@ -1,10 +1,13 @@
-<% @locations.each do |location| %>
-<div class="card" style="width: 18rem;">
-  <%= image_tag location.picture, class:"card-img-top" %>
-  <div class="card-body">
-    <h5 class="card-title"><%= location.location %></h5>
-    <p class="card-text"><%= location.name %> <%= link_to "Read More", location_path(location.id), class:"btn btn-primary btn-right" %></p>
-        
-  </div>
+<div class="row">
+  <% @locations.each do |location| %>
+  <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <%= image_tag location.picture, class:"card-img-top" %>
+        <div class="card-body">
+          <h5 class="card-title"><%= location.location %></h5>
+          <p class="card-text"><%= location.name %> <%= link_to "Read More", location_path(location.id), class:"btn btn-primary btn-right" %></p>     
+        </div>
+      </div>
+    </div>
+      <% end %>
 </div>
-<% end %>
